@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Enter the binary</h1>
+    <div style="display: flex; flex-direction: row; gap: 10px">
+      <div>
+        <label for="selectFrom">From</label>
+        <select id="selectFrom">
+          <option value="bin" selected>Binary</option>
+          <option value="dec">Decimal</option>
+          <option value="hex">Hexadecimal</option>
+        </select>
+      </div>
+      <div>
+        <label for="selectTo">To</label>
+        <select id="selectTo">
+          <option value="dec" selected>Decimal</option>
+          <option value="bin">Binary</option>
+          <option value="hex">Hexadecimal</option>
+        </select>
+      </div>
+    </div>
+
+    <form>
+      <input type="text" required />
+      <button type="submit">Valider</button>
+    </form>
+    <p style="display: none"></p>
+    <div style="display: none" class="error"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
